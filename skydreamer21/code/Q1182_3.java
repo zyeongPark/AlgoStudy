@@ -1,4 +1,4 @@
-// 1182번 부분수열의 합
+package code;// 1182번 부분수열의 합
 /*
 <문제 정보>
  1. 부분 수열중 원소의 합이 S가 되는 경우의 수를 출력
@@ -23,8 +23,6 @@ import java.util.StringTokenizer;
 
 
 public class Q1182_3 {
-
-
 
     public static void main(String args[]) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
