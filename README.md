@@ -10,4 +10,4 @@
 |Date|Topics|
 |:----:|:----:|
 |**10/13 (THU)**|Floyd-Warshall Algorithm|
-|**10/14 (FRI)**|Heap & Heap Sort Algorithm|
+|**10/14 (FRI)**|dijkstra Algorithm & boj no.1753|
