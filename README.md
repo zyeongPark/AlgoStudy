@@ -10,4 +10,4 @@
 |Date|Topics|
 |:----:|:----:|
 |**10/13 (THU)**|Floyd-Warshall Algorithm|
-|**10/14 (FRI)**|dijkstra Algorithm & boj(No.1753)|
+|**10/14 (FRI)**|dijkstra Algorithm & boj( No.1753 )|
