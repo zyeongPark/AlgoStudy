@@ -1,5 +1,5 @@
 // [DAY39] Heap Sort (minheap & maxheap)
-// [백준] 24173. 알고리즘 수업 - 힙 정렬 1 -> 계속 틀리는 중
+// [백준] 24173. 알고리즘 수업 - 힙 정렬 1 -> 계속 틀리는 중 // 1 3 나옴
 
 import Foundation
 
@@ -34,7 +34,6 @@ func heapSort() {
 }
 
 func heapify(_ root: Int, _ n: Int) {
-    print("=== heapify \(root) ===")
     let startIdx = (arr.count - 1) / 2
     for i in stride(from: startIdx, to: 1, by: -1) {
         minHeapifyRecursion(arr.count, i)
