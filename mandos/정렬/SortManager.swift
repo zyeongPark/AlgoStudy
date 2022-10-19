@@ -23,7 +23,7 @@ final class SortManager<T: Comparable> {
             for j in 0..<array.count - i - 1 {
                 if compare(array[j] as! T, array[j + 1] as! T) {
                     array.swapAt(j, j + 1)
-                }
+                } else { break }
             }
         }
         array.forEach { print($0) }
