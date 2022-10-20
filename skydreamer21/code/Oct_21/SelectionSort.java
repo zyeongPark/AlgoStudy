@@ -1,12 +1,9 @@
-package Oct_20;
+package Oct_21;
 
 import java.io.*;
 import java.util.StringTokenizer;
 
-// 정렬 배열 예시
-// 1 10 2 9 3 8 4 7 5 6
-
-public class BubbleSort {
+public class SelectionSort {
     static final int ASCENDING = 1;
     static final int DESCENDING = 2;
 
@@ -34,7 +31,7 @@ public class BubbleSort {
             arr[i] = Integer.parseInt(st.nextToken());
         }
 
-        bubbleSort(arr, option);
+        selectionSort(arr, option);
         System.out.println("\n정렬 결과");
         printArr(arr);
 
@@ -44,28 +41,33 @@ public class BubbleSort {
         br.close();
     }
 
-    public static void bubbleSort (int[] arr, int option) {
+    public static void selectionSort (int[] arr, int option) {
         System.out.println("\n정렬이 되어가는 과정");
         int length = arr.length;
-        for (int size = length; size > 1; size--) {
-            bubble(arr, size, option);
+        for (int startIdx = 0; startIdx < arr.length - 1; startIdx++) {
+            selection(arr, startIdx, option);
             printArr(arr);
         }
     }
 
-    private static void bubble (int[] arr, int size, int option) {
-        for (int i = 1; i < size; i++) {
+    private static void selection (int[] arr, int startIdx, int option) {
+        int value = option == ASCENDING ? Integer.MAX_VALUE : Integer.MIN_VALUE;
+        int valueIdx = -1;
+        for (int i = startIdx; i < arr.length; i++) {
             if (option == ASCENDING) {
-                if (arr[i] < arr[i-1]) {
-                    swap(arr, i-1, i);
+                if (arr[i] < value) {
+                    value = arr[i];
+                    valueIdx = i;
                 }
             }
             else {
-                if (arr[i] > arr[i-1]) {
-                    swap(arr, i-1, i);
+                if (arr[i] > value) {
+                    value = arr[i];
+                    valueIdx = i;
                 }
             }
         }
+        swap(arr, startIdx, valueIdx);
     }
 
     private static void swap (int[] arr, int i, int j) {
