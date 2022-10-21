@@ -9,6 +9,7 @@
 |**10/18 (TUE)**|🟢|🟢|🟢|❌|❌
 |**10/19 (WED)**|❌|🟢|🟢|🟢|🟢
 |**10/20 (THU)**|❌|🟢|🟢|🟢|.
+|**10/21 (FRI)**|❌|❌|🟢|❌|.
 
 
 ## 📋 Topics
@@ -19,4 +20,5 @@
 |**10/17 (MON)**|Heap|
 |**10/18 (TUE)**|Heap sort Concept (minheap & maxheap)|
 |**10/19 (WED)**|Heap Sort Features|
-|**10/20 (THU)**|bubbleSort & boj( No.24173 )|
+|**10/20 (THU)**|bubble Sort & boj( No.24173 )|
+|**10/21 (FRI)**|selection Sort|
