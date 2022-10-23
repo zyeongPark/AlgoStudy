@@ -43,7 +43,7 @@ public class HeapSort {
     }
 
     public static void heapSort (int[] arr, boolean mode) {
-        heapify(arr, mode);
+        buildHeap(arr, mode);
         System.out.printf("%sheapify 후\n", mode ? "min" : "max");
         printArr(arr);
         System.out.println("\n정렬이 되어가는 과정");
@@ -51,22 +51,22 @@ public class HeapSort {
         while (size > 1) {
             swap(arr, 1, size-1);
             size--;
-            if (mode == true) minHeapifyRecursion(arr, size, 1);
-            else maxHeapifyRecursion(arr, size,1);
+            if (mode == true) minHeapify(arr, size, 1);
+            else maxHeapify(arr, size,1);
             printArr(arr);
         }
     }
 
-    public static void heapify(int[] arr, boolean mode) {
+    public static void buildHeap(int[] arr, boolean mode) {
         int startIdx = ( arr.length - 1 ) / 2;
         for (int i = startIdx; i>=1; i--) {
-            if (mode == MIN) minHeapifyRecursion(arr, arr.length, i);
-            else maxHeapifyRecursion(arr, arr.length, i);
+            if (mode == MIN) minHeapify(arr, arr.length, i);
+            else maxHeapify(arr, arr.length, i);
         }
     }
 
     // 자식 중 더 작은 자식이 부모보다도 작다면 교환합니다.
-    public static void minHeapifyRecursion (int[] arr, int size, int parent) {
+    public static void minHeapify(int[] arr, int size, int parent) {
         int maxIdx = size - 1;
         // 1. 자식노드가 없다면
         if ( parent*2 > maxIdx ) return;
@@ -82,11 +82,11 @@ public class HeapSort {
 
         if (arr[smallerChildNode] < arr[parent]) {
             swap(arr, parent, smallerChildNode);
-            minHeapifyRecursion(arr, size, smallerChildNode);
+            minHeapify(arr, size, smallerChildNode);
         }
     }
 
-    public static void maxHeapifyRecursion (int[] arr, int size, int parent) {
+    public static void maxHeapify(int[] arr, int size, int parent) {
         int maxIdx = size - 1;
         // 1. 자식노드가 없다면
         if ( parent*2 > maxIdx ) return;
@@ -102,7 +102,7 @@ public class HeapSort {
 
         if (arr[biggerChildNode] > arr[parent]) {
             swap(arr, parent, biggerChildNode);
-            maxHeapifyRecursion(arr, size, biggerChildNode);
+            maxHeapify(arr, size, biggerChildNode);
         }
     }
 
