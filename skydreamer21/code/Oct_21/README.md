@@ -1,4 +1,4 @@
-# Bubble Sort
+# Selection Sort
 
 ## 시간복잡도
 - Best : $O(N^2)$
