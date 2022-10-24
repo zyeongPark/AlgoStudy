@@ -1,7 +1,7 @@
-# Selection Sort
+# Insertion Sort
 
 ## 시간복잡도
-- Best : $O(N^2)$
+- Best : $O(N)$
 - Worst : $O(N^2)$
 
 ## Inplace
@@ -12,6 +12,5 @@
 - $O(n)$
 
 ## Stable vs Unstable
-- 중복된 원소들의 순서가 바뀔 수 있다.
-- unstable
-- ex) 3 9 4 9' 1 => 1 3 4 9' 9
+- 중복된 원소들의 순서가 유지된다.
+- stable

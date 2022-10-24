@@ -43,14 +43,11 @@ public class Heap_int {
         int leftChildIdx = parentIdx*2;
         if (leftChildIdx > lastIndex) return;
 
-        int biggerValueChildIdx;
+        int biggerValueChildIdx = leftChildIdx;
 
-        if (leftChildIdx == lastIndex) {
-            biggerValueChildIdx = leftChildIdx;
-        }
-        else {
-            int rightChildIdx = parentIdx*2 + 1;
-            biggerValueChildIdx = heap.get(leftChildIdx) >= heap.get(rightChildIdx) ? leftChildIdx : rightChildIdx;
+        int rightChildIdx = parentIdx*2 + 1;
+        if (rightChildIdx <= lastIndex && heap.get(leftChildIdx) < heap.get(rightChildIdx)) {
+            biggerValueChildIdx = rightChildIdx;
         }
 
         if (heap.get(parentIdx) < heap.get(biggerValueChildIdx)) {
