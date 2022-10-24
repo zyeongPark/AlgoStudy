@@ -10,6 +10,7 @@
 |**10/19 (WED)**|❌|🟢|🟢|🟢|🟢
 |**10/20 (THU)**|❌|🟢|🟢|🟢|.
 |**10/21 (FRI)**|❌|🟢|🟢|❌|.
+|**10/24 (MON)**|🟢|❌|🟢|🟢|.
 
 
 ## 📋 Topics
@@ -22,3 +23,4 @@
 |**10/19 (WED)**|Heap Sort Features|
 |**10/20 (THU)**|bubble Sort & boj( No.24173 )|
 |**10/21 (FRI)**|selection Sort|
+|**10/24 (MON)**|insertion Sort|
