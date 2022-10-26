@@ -58,9 +58,10 @@ public class CountingSort {
         int[] temp = new int[arr.length];
         System.arraycopy(arr, 0, temp, 0, arr.length);
 
-        for (int num : temp) {
-            int sortedIdx = --count[num];
-            arr[sortedIdx] = num;
+        int len = arr.length;
+        for (int i = len-1; i>=0; i--) {
+            int sortedIdx = --count[temp[i]];
+            arr[sortedIdx] = temp[i];
         }
     }
 
