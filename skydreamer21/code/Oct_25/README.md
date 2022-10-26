@@ -20,3 +20,6 @@
 ## Stable vs Unstable
 - 중복된 원소들의 순서가 유지되지 않는다.
 - Unstable
+
+** stable sort 만들기
+[Quicksort를 stable sorti*ng이 되게 하는 법](https://lemonlemon.tistory.com/145)
