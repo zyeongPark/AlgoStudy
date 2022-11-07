@@ -1,5 +1,3 @@
-//import Foundation
-
 let total = Int(readLine()!)! // 컴퓨터의 총 수량, 0~100
 let n = Int(readLine()!)! // 직접 연결되어 있는 컴퓨터 쌍의 수
 var graph: [[Int]] = Array(repeating: Array(repeating: 0, count: total + 1), count: total + 1)
@@ -12,8 +10,9 @@ for _ in 0 ..< n {
 	graph[a][b] = 1
 	graph[b][a] = 1
 }
-//print(graph)
-//print(visited)
+
+print(graph)
+print(visited)
 
 func bfs(_ v: Int) {
 	visited[v] = true
