@@ -37,6 +37,7 @@
 		8F76B718291553A600481528 /* InsertionSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertionSort.swift; sourceTree = "<group>"; };
 		8F76B7192915546E00481528 /* Description */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Description; sourceTree = "<group>"; };
 		8FA7DD6C2917E633007921E8 /* PQ43165-TargetNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PQ43165-TargetNumber.swift"; sourceTree = "<group>"; };
+		8FA7DD6F29194EF1007921E8 /* BQ2606_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ2606_BFS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +130,7 @@
 		8FA7DD6A2917E4FB007921E8 /* 22-11 */ = {
 			isa = PBXGroup;
 			children = (
+				8FA7DD6E29194EC8007921E8 /* 11-07 */,
 				8FA7DD6B2917E54C007921E8 /* 11-06 */,
 			);
 			path = "22-11";
@@ -140,6 +142,14 @@
 				8FA7DD6C2917E633007921E8 /* PQ43165-TargetNumber.swift */,
 			);
 			path = "11-06";
+			sourceTree = "<group>";
+		};
+		8FA7DD6E29194EC8007921E8 /* 11-07 */ = {
+			isa = PBXGroup;
+			children = (
+				8FA7DD6F29194EF1007921E8 /* BQ2606_BFS.swift */,
+			);
+			path = "11-07";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
