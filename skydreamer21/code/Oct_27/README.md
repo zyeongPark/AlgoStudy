@@ -9,7 +9,7 @@
 - Inplace : `False`
 
 ## 공간복잡도
-- $O(n)$
+- $O(N)$
 
 ## Stable vs Unstable
 - 중복된 원소들의 순서가 유지된다.
