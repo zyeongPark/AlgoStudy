@@ -20,6 +20,7 @@
 |**11/03 (THU)**|❌|🟢|🟢|🟢|.
 |**11/04 (FRI)**|❌|🟢|🟢|❌|.
 |**11/07 (MON)**|🟢|🟢|❌|🟢|.
+|**11/08 (TUE)**|🟢|🟢|🟢|🟢|.
 
 ## 📋 Topics
 |Date|Topics|
@@ -39,6 +40,7 @@
 |**11/01 (TUE)**|radix Sort|
 |**11/02 (WED)**|programmers - level3(입국심사)|
 |**11/03 (THU)**|programmers - level3(가장 먼 노드)|
-|**11/04 (FRI)**|programmers - level2(타겟 넘버)|
+|**11/04 (FRI)**|programmers - level3(순위)|
+|**11/07 (MON)**|programmers - level2(타겟 넘버)|
 |**11/07 (MON)**|BFS & boj( No.2606 )|
 
