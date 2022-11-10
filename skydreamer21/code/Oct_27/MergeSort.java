@@ -102,7 +102,7 @@ public class MergeSort {
                 temp[idx] = arr[left];
                 left++;
             }
-            else { // arr[left] > arr[right]
+            else { // arr[left] < arr[right]
                 temp[idx] = arr[right];
                 right++;
             }
