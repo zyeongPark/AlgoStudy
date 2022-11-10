@@ -22,6 +22,7 @@
 |**11/07 (MON)**|🟢|🟢|❌|🟢|.
 |**11/08 (TUE)**|🟢|🟢|🟢|🟢|.
 |**11/09 (WED)**|🟢|❌|🟢|🟢|.
+|**11/10 (THU)**|🟢|🟢|❌|❌|.
 
 ## 📋 Topics
 |Date|Topics|
@@ -43,6 +44,7 @@
 |**11/03 (THU)**|programmers - level3(가장 먼 노드)|
 |**11/04 (FRI)**|programmers - level3(순위)|
 |**11/07 (MON)**|programmers - level2(타겟 넘버)|
-|**11/07 (MON)**|BFS & boj( No.2606 )|
-|**11/07 (TUE)**|DFS&BFS & boj( No.1012 )|
+|**11/08 (TUE)**|BFS & boj( No.2606 )|
+|**11/09 (WED)**|DFS&BFS & boj( No.1012 )|
+|**11/10 (THU)**|DFS&BFS & boj( No.2644 ) & boj( No.4963 )|
 
