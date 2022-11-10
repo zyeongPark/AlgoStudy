@@ -26,13 +26,13 @@ while true {
     let input = readLine()!.split(separator: " ").map{ Int(String($0))! }
     let (w, h) = (input[0], input[1])
     if (w == 0) && (h == 0) { break }
-
+    
     var matrix = [[Int]]()
     
     for _ in 0 ..< h {
         matrix.append(readLine()!.split(separator: " ").map{ Int(String($0))! })
     }
-
+    
     var count = 0
     for i in 0 ..< h {
         for j in 0 ..< w {

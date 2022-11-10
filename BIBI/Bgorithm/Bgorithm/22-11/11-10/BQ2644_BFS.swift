@@ -1,49 +1,35 @@
-func bfs(_ x:Int, _ y: Int, _ matrix: inout [[Int]], _ w: Int, _ h: Int) {
-    // 동 남 서 북 동남 서북 동북 서남
-    let dx = [1, -1, 0, 0, 1, -1, 1, -1]
-    let dy = [0, 0, -1, 1, -1, 1, 1, -1]
-    
-    matrix[x][y] = 0
-    
-    let queue = Queue<(Int, Int)>()
-    queue.enqueue((x, y))
-    
+let total = Int(readLine()!)!
+let input = readLine()!.split(separator: " ").map{ Int(String($0))! }
+let (start, end) = (input[0], input[1])
+let m = Int(readLine()!)!
+
+var graph: [[Int]] = Array(repeating: [], count: total + 1)
+
+for _ in 0 ..< m {
+    let line = readLine()!.split(separator: " ").map{ Int(String($0))! }
+    let (x, y) = (line[0], line[1])
+    graph[x].append(y)
+    graph[y].append(x)
+}
+
+var depth = Array(repeating: 0, count: total + 1)
+
+func bfs(_ start: Int) -> Int {
+    let queue = Queue<Int>()
+    queue.enqueue(start)
     while !queue.isEmpty {
-        let (a, b) = queue.dequeue() ?? (0, 0)
-        for i in 0..<8 {
-            let nx = a + dx[i]
-            let ny = b + dy[i]
-            if (0 <= nx) && (nx < h) && (0 <= ny) && (ny < w) && (matrix[nx][ny] == 1) {
-                matrix[nx][ny] = 0
-                queue.enqueue((nx, ny))
+        let now = queue.dequeue() ?? 0
+        for next in graph[now] {
+            if depth[next] == 0 {
+                depth[next] = depth[now] + 1
+                queue.enqueue(next)
             }
         }
     }
-    
+    return depth[end] > 0 ? depth[end] : -1
 }
 
-while true {
-    let input = readLine()!.split(separator: " ").map{ Int(String($0))! }
-    let (w, h) = (input[0], input[1])
-    if (w == 0) && (h == 0) { break }
-
-    var matrix = [[Int]]()
-    
-    for _ in 0 ..< h {
-        matrix.append(readLine()!.split(separator: " ").map{ Int(String($0))! })
-    }
-
-    var count = 0
-    for i in 0 ..< h {
-        for j in 0 ..< w {
-            if matrix[i][j] == 1 {
-                bfs(i, j, &matrix, w, h)
-                count += 1
-            }
-        }
-    }
-    print(count)
-}
+print(bfs(start))
 
 final class LinkedList<T> {
     final class Node<T> {
