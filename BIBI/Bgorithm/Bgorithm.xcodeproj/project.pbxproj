@@ -43,6 +43,7 @@
 		8FA7DD6F29194EF1007921E8 /* BQ2606_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ2606_BFS.swift; sourceTree = "<group>"; };
 		8FDD2AC129224E1200E5B3A9 /* BQ11724_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ11724_BFS.swift; sourceTree = "<group>"; };
 		8FDD2AC2292254CF00E5B3A9 /* BQ11724_DFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ11724_DFS.swift; sourceTree = "<group>"; };
+		8FDD2AC429225A4200E5B3A9 /* BQ11725_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ11725_BFS.swift; sourceTree = "<group>"; };
 		8FE232B6291C6F000055A764 /* BQ2644_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ2644_BFS.swift; sourceTree = "<group>"; };
 		8FE232B7291C73220055A764 /* BQ4963_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ4963_BFS.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,8 +176,9 @@
 		8FDD2AC029224DF900E5B3A9 /* 11-11 */ = {
 			isa = PBXGroup;
 			children = (
-				8FDD2AC129224E1200E5B3A9 /* BQ11724_BFS.swift */,
 				8FDD2AC2292254CF00E5B3A9 /* BQ11724_DFS.swift */,
+				8FDD2AC129224E1200E5B3A9 /* BQ11724_BFS.swift */,
+				8FDD2AC429225A4200E5B3A9 /* BQ11725_BFS.swift */,
 			);
 			path = "11-11";
 			sourceTree = "<group>";
