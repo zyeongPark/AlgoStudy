@@ -8,11 +8,14 @@ func solution(_ cacheSize:Int, _ cities:[String]) -> Int {
     if cacheSize == 0 {
         return 5 * cities.count
     } else {
+        // 캐시 사이즈가 0이 아니라면 LRU 실행
         cities.forEach { city in
+            // 캐시에 해당 문자열이 있는 경우 = cache hit
             if cache.contains(city.lowercased()) {
                 time += 1
                 cache.remove(at: cache.firstIndex(of: city.lowercased())!)
             } else {
+                // 캐시에 해당 문자열이 없는 경우 = cache miss
                 time += 5
                 cache.remove(at: cache.count - 1)
             }
@@ -22,13 +25,3 @@ func solution(_ cacheSize:Int, _ cities:[String]) -> Int {
     
     return time
 }
-
-let cacheSize1 = 3
-let cities1 = ["Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"]
-
-print(solution(cacheSize1, cities1)) // 50
-
-let cacheSize4 = 5
-let cities4 = ["Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"]
-
-print(solution(cacheSize4, cities4)) // 52
