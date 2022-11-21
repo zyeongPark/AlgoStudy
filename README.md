@@ -26,6 +26,7 @@
 |**11/11 (FRI)**|❌|🟢|❌|🟢|.
 |**11/15 (TUE)**|🟢|❌|🟢|🟢|.
 |**11/16 (WED)**|🟢|❌|🟢|❌|.
+|**11/17 (THU)**|🟢|❌|🟢|❌|.
 
 ## 📋 Topics
 |Date|Topics|
@@ -53,3 +54,4 @@
 |**11/11 (FRI)**|DFS&BFS & boj( No.11724 ) & boj( No.11725 )|
 |**11/15 (TUE)**|programmers - level2([1차] 캐시)|
 |**11/16 (WED)**|programmers - level2(문자열 압축)|
+|**11/17 (WED)**|programmers - level2(괄호 변환)|
