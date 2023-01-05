@@ -6,7 +6,7 @@
 //
 
 /// 그리디 알고리즘 - 큰 수의 법칙
-/// 풀이 : https://byukbyak.tistory.com/425
+/// 풀이 : https://zrr.kr/7uCl
 
 import Foundation
 
