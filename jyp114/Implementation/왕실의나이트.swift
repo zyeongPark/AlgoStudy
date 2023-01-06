@@ -18,7 +18,7 @@ for i in 0..<8 {
     let nx = x + dx[i]
     let ny = x + dy[i]
     
-    if nx >= 1 && nx <= 8 && ny >= 1 && ny <= 8{
+    if nx >= 0 && nx < 8 && ny >= 0 && ny < 8{
         answer += 1
     }
 }
