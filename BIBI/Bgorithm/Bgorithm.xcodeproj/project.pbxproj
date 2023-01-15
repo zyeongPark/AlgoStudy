@@ -44,6 +44,7 @@
 		8FA7DD6C2917E633007921E8 /* PQ43165-TargetNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PQ43165-TargetNumber.swift"; sourceTree = "<group>"; };
 		8FA7DD6F29194EF1007921E8 /* BQ2606_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ2606_BFS.swift; sourceTree = "<group>"; };
 		8FA9F44129420A6600EFA8D7 /* FileIO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileIO.swift; sourceTree = "<group>"; };
+		8FB0AB71296CE3CB00C8B612 /* 10-DFS-BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "10-DFS-BFS.swift"; sourceTree = "<group>"; };
 		8FC1FD372924A09400AC9002 /* PQ60057_String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PQ60057_String.swift; sourceTree = "<group>"; };
 		8FC917C72963AC6D00C191AC /* 03-Greedy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "03-Greedy.swift"; sourceTree = "<group>"; };
 		8FDD2AC129224E1200E5B3A9 /* BQ11724_BFS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BQ11724_BFS.swift; sourceTree = "<group>"; };
@@ -202,6 +203,7 @@
 			children = (
 				8FC917C72963AC6D00C191AC /* 03-Greedy.swift */,
 				8F90E0F02965BE6100041E6C /* 05-Implementation.swift */,
+				8FB0AB71296CE3CB00C8B612 /* 10-DFS-BFS.swift */,
 			);
 			path = "23-01";
 			sourceTree = "<group>";
