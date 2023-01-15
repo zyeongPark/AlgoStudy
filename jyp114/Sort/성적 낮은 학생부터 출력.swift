@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//n 입력 받기
+////n 입력 받기
 //let n = Int(readLine()!)!
 //
 ////값 입력받기
